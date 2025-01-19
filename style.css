@@ -1,0 +1,151 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #000000;
+}
+
+/* Header styles */
+header h1 {
+    text-align: center;
+    margin: 40px 0;
+}
+
+header p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Centering form container */
+.Student-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 57vh;
+    padding: 20px;
+}
+
+/* Form styling */
+.Student1 {
+    margin: 0;
+    padding: 20px 60px;
+    background: #f3f3f3;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 40%;
+    color: #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Label styling */
+.Student1 label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+/* Input styling */
+.Student1 input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 11px;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+.Student1 .btn {
+    background: #36b8e4;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+    border-radius: 15px;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    display: block;
+}
+
+/* Table styling */
+#studentRecords {
+    margin-top: 30px;
+    padding: 0 10px; 
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px; 
+}
+
+table th {
+    background-color: #3abbc9;
+    color: #fff;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .Student1 {
+        width: 60%;
+        padding: 20px 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Student1 {
+        width: 80%; 
+        padding: 15px 20px;
+    }
+
+    .btn {
+        width: 100%; 
+        margin: 10px 0; 
+    }
+
+    table th, table td {
+        font-size: 12px; 
+    }
+
+    /* Ensuring that actions (edit/delete) buttons are more touch-friendly */
+    .actions-btn button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Student1 {
+        width: 90%;
+        padding: 15px;
+    }
+
+    table {
+        font-size: 12px; 
+    }
+
+    table th, table td {
+        padding: 8px; 
+    }
+
+    /* Adjust button size for mobile */
+    .btn {
+        padding: 12px;
+    }
+}
